@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    display: flex; 
+    height: 100vh;
+    background-color: #1a1f2e;
+    color: #ffffff;
+}
+
+.sidebar {
+    width: 200px; 
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.logo {
+    color: #005eff; 
+    font-size: 22px; 
+    font-weight: 700;
+    margin-bottom: 50px; 
+    margin-left: 10px; 
+}
+
+.menu li {
+    list-style: none;
+    font-size: 18px; 
+    color: #333;
+    margin: 30px 0; 
+    display: absolute; 
+    border-left: 3px solid #005eff;
+    align-items: center;
+    margin-left: -30px; 
+    cursor: pointer; 
+}
+
+.menu li .icon {
+    font-size: 22px; 
+    color: #777; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-box {
+    background-color: #1a1f2e;
+    padding: 20px; 
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 40%;
+    height: 93vh; 
+    margin-right: 40px; 
+    filter: brightness(1.1); /* Increase brightness to make it stand out */
+    z-index: 1; /* Ensure it appears on top */
+    position: relative; /* Ensure it is positioned correctly */
+}
+
+.ai {
+    margin-top: 525px; 
+    margin-bottom: 20px; 
+    filter: brightness(1.2); /* Increase brightness to make it stand out */
+    z-index: 1; /* Ensure it appears on top */
+    position: relative; /* Ensure it is positioned correctly */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow to make it pop */
+}
+
+.response {
+    background-color: #1a1f2e;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.user {
+    display: flex; 
+    justify-content: space-between;
+    background-color: #ffff;
+    color: #000;
+    padding: 13px;
+    border-radius: 10px;
+    margin: 5px 0;
+    width: 80%;
+    cursor: pointer;
+    margin-left: auto; 
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.user span {
+    color: #3b82f6;
+    cursor: pointer; 
+}
+
+.input-container {
+    display: flex; 
+    align-items: center; /* Align items vertically in the center */
+    width: 102%; /* Ensure the container takes the full width */
+    margin-top: 25px; 
+    filter: brightness(1.2); /* Increase brightness to make it stand out */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow to make it pop */
+    margin-left: -20px; 
+    padding: 15px;
+}
+
+.input-box {
+    flex: 1;
+    background-color: #111827;
+    border-radius: 30px;
+    padding: 10px; 
+    filter: brightness(1.2); /* Increase brightness to make it stand out */
+    z-index: 1; /* Ensure it appears on top */
+    position: relative; /* Ensure it is positioned correctly */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow to make it pop */
+    margin-top: 5px; 
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: none; 
+    font-size: medium;
+    color: #fff;
+    outline: none; 
+    filter: brightness(1.2); /* Increase brightness to make it stand out */
+    position: relative; /* Ensure it is positioned correctly */
+}
+
+.send-button {
+    margin-left: 20px; /* Add some space between the input and the button */
+    margin-top: 10px; /* Align the button with the input */
+}
+
+.send-button button {
+    background-color: #005eff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 10px; 
+    border-radius: 50%; 
+}
+
+.insight {
+    width: 300px; 
+    background-color: #1a1f2e;
+    filter: brightness(1.1); /* Increase brightness to make it stand out */
+    z-index: 1; /* Ensure it appears on top */
+    position: relative; /* Ensure it is positioned correctly */
+    padding: 20px;
+}
+
+.insight h3 {
+    color: #005eff; 
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 10px; 
+}
+
+.insight-content {
+    background-color: #111827;
+    padding: 15px; 
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.insight-content strong {
+    color: #005eff; 
+    font-weight: 600;
+}

@@ -4,7 +4,7 @@ body {
     padding: 0;
     display: flex; 
     height: 100vh;
-    background-color: #1a1f2e;
+    background-color: #111827;
     color: #ffffff;
 }
 
@@ -150,32 +150,124 @@ body {
     border-radius: 50%; 
 }
 
-.insight {
+.insights-sidebar {
+    padding: 20px; /* Add padding to the sidebar */
     width: 300px; 
+    background-color: #1f2233; /* Slightly blue-gray background color */
+    color: #ffffff; /* Default text color: white */
+    font-family: 'Roboto', sans-serif;
+}
+
+.insights-sidebar > * {
+    margin-bottom: 15px; /* Add bottom margin for spacing */
+}
+
+.insights-sidebar h2 {
+    color: #005eff; /* Blue for "Insights" */
+    font-size: 22px; /* Slightly larger */
+    font-weight: 700; /* Thicker font weight */
+    margin-bottom: 50px; /* Adjust bottom margin */
+}
+
+.session-insights-heading {
+    color: #ffffff; /* White for "Session Insights" */
+    font-size: 18px; /* Slightly larger */
+    font-weight: 700; /* Thicker font weight */
+    margin-bottom: 15px; /* Adjust bottom margin */
+}
+
+.insights-sidebar h3 {
+    color: #ffffff; /* Change gray text to white */
+    margin-bottom: 15px; /* Adjust bottom margin */
+    font-size: 16px;
+    margin-top: 30px; 
+    font-weight: 400; /* Slightly thicker */
+}
+
+.insights-sidebar h4 {
+    color: #ffffff; /* White for smaller headings */
+    font-size: 16px; /* Smaller than h3 */
+    font-weight: 500; /* Semi-bold for smaller headings */
+    margin: 5px 0;
+}
+
+.insights-sidebar p {
+    color: #ffffff; /* White for longer text */
+    font-size: 12px; /* Smaller font size */
+    font-weight: 200; /* Normal weight for regular text */
+    margin-bottom: 35px;
+}
+
+.mood-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align items to the bottom */
     background-color: #1a1f2e;
-    filter: brightness(1.1); /* Increase brightness to make it stand out */
+    padding: 20px; /* Adjust padding */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Add bottom margin */
+    width: 80%; /* Adjust width to make it thinner */
+    margin-left: auto;
+    filter: brightness(1.2); /* Increase brightness to make it stand out */
+    margin-right: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow to make it pop */
+    gap: 5px; /* Adjust gap between bars */
+    height: 150px; /* Adjust height */
+}
+
+.mood-bar {
+    width: 50px; /* Make bars thicker */
+    background: #1f6fff;
+    border-radius: 2px;
+    opacity: 0.9;
+    filter: grayscale(90%); /* Apply grayscale filter to make it look gray */
+}
+
+.bar1 { 
+    height: 100px; 
+   
+}
+
+.bar2 { 
+    height: 90px; 
+    background: linear-gradient(to bottom, #5077FF, #00BFFF); /* Keep the second bar colored */
+    filter: none; /* Remove grayscale filter for the second bar */
+}
+
+.bar3 { 
+    height: 80px; 
+}
+
+.bar4 { 
+    height: 110px; 
+}
+
+.bar5 { 
+    height: 95px; 
+}
+
+.resource {
+    background-color: #1a1f2e;
+    filter: brightness(1.1); /* Slightly increase brightness */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow to make it pop */
     z-index: 1; /* Ensure it appears on top */
     position: relative; /* Ensure it is positioned correctly */
-    padding: 20px;
+    padding: 10px; /* Adjust padding */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust margins for closer spacing */
+    width: 90%; /* Adjust width to make it thinner */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.insight h3 {
-    color: #005eff; 
-    margin-bottom: 10px;
-    font-size: 20px;
-    margin-left: 10px; 
-}
-
-.insight-content {
-    background-color: #111827;
-    padding: 15px; 
-    border-radius: 5px;
+.resource p {
+    margin: 0 0 10px; /* Adjust bottom margin */
     color: #fff;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 100;
 }
 
-.insight-content strong {
-    color: #005eff; 
-    font-weight: 600;
-}
+
